@@ -1,12 +1,9 @@
 [package]
 # TODO(1) fix `authors` and `name` if you didn't use `cargo-generate`
 authors = ["{{authors}}"]
-name = "{{project-name}}"
+name = "regression"
 edition = "2018"
 version = "0.1.0"
-
-[workspace]
-members = ["testsuite"]
 
 [dependencies]
 cortex-m = "0.7.1"
@@ -16,6 +13,7 @@ defmt-rtt = "0.2.0"
 panic-probe = { version = "0.2.0", features = ["print-defmt"] }
 # TODO(4) enter your HAL here
 # some-hal = "1.2.3"
+lm3s6965 = "*"
 
 [features]
 # set logging levels here
